@@ -1,11 +1,21 @@
+@font-face {
+    font-family: 'BaliviaFreeBold';
+    src: url('/fonts/BaliviaFreeBold.ttf') format('truetype');
+  }
+  .blue {
+    color: #5277ac;
+  }
 .fondorojo{
     background-image: url("images/yssAsset%204.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 1200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
-}
+
 .encabezado{
     display: flex;
     justify-content: center;
@@ -62,6 +72,7 @@
     display: flex;
     flex-grow: 1;
     width: 15%;
+
 }
 .shop{
     display: flex;
@@ -72,7 +83,7 @@
 }
 /* FIN HEADER ------------------------------------ */
 
-/* PRIMER SECCION ------------------------------------ */
+/* SECCIONES ------------------------------------ */
 .primerseccion {
     display: flex;
     flex-grow: 1;
@@ -80,10 +91,76 @@
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
-
+    
     max-height: max-content;
     flex-direction: column;
   }
+.segundaseccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url("images/ysAsset%201.png");
+    height: 1400px;
+    position: relative;
+}
+.parrafo {
+    order: 1;
+    font-family: 'BaliviaFreeBold', sans-serif;
+    font-size: 40px;
+    color: #ef4136;
+    white-space: pre-line;
+    margin-left: 10px;
+    align-self: center;
+    justify-content: center;
+    
+  }
+#bandera{
+    order: 0;
+    display: flex;
+    align-self: flex-start;
+    margin-right: 10px;
+    padding-top: 15%;
+        
+}
+#juega{
+    order: 2;
+    display: flex;
+    align-self: center;
+    margin-right: 10px;
+    padding-bottom: 15%;    
+}
+.tercerseccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    width: 100%;
+    height: 1400px;
+    position: relative;    
+    box-sizing: border-box;
+}
+#ninos{
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+    position: absolute; 
+    z-index: -1; 
+    top: -500px; 
+    left: 0; 
+}
+#onda{
+    display: block;
+    padding-top: 85%;
+    width: 2000px; 
+    height: auto; 
+    box-sizing: border-box;
+}
 #anuncio{
     
     position: relative;
