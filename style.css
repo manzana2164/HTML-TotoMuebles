@@ -1,0 +1,91 @@
+.fondorojo{
+    background-image: url("images/yssAsset%204.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1200px;
+}
+}
+.encabezado{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+       
+}
+/* HEADER ------------------------------------ */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    color: white;
+    align-content: center;
+    padding-top: 5%;
+
+  }
+  .nav-menu {
+    display: flex;
+    color: #ffffff;
+    background-color: #5277ac;
+    flex: 2; 
+    border-radius: 45px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    flex-grow: 2;
+    list-style: none;
+    flex-shrink: 0;
+    margin: 0 20px; 
+    opacity: 0.8;
+
+}
+.nav-menu li + li{ 
+    margin-left: 10px;
+}
+.nav-menu a {
+    display: flex;
+    color: white;
+    font-size: 35px;
+    margin: auto;
+    justify-content: center;
+    text-decoration: none;
+    flex-grow: 2;
+}
+
+
+.logo {
+    display: flex;
+    flex-grow: 1;
+    width: 15%;
+}
+.shop{
+    display: flex;
+    flex-grow: 1;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+}
+/* FIN HEADER ------------------------------------ */
+
+/* PRIMER SECCION ------------------------------------ */
+.primerseccion {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    max-height: max-content;
+    flex-direction: column;
+  }
+#anuncio{
+    
+    position: relative;
+}
+
