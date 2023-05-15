@@ -5,11 +5,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <title>TOTO Muebles - Somos TOTO</title>
-
 </head>
 <body>
+<!-- Codigo JS para el slider de productos 
 
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const carouselSlides = document.querySelectorAll('.carousel__item');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let counter = 1;
+    const size = carouselSlides[0].clientWidth;
+
+    carousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+    nextBtn.addEventListener('click', () => {
+        if (counter >= carouselSlides.length -1) return;
+        carousel.style.transition = "transform 0.4s ease-in-out";
+        counter++;
+        carousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    })
+
+    prevBtn.addEventListener('click', () => {
+        if (counter <= 0) return;
+        carousel.style.transition = "transform 0.4s ease-in-out";
+        counter--;
+        carousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    })
+
+  carousel.addEventListener('transitionend', () => {
+      if (carouselSlides[counter].id === 'lastClone') {
+          carousel.style.transition = "none";
+          counter = carouselSlides.length - 2;
+          carousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+      }
+      if (carouselSlides[counter].id === 'firstClone') {
+          carousel.style.transition = "none";
+          counter = carouselSlides.length - counter;
+          carousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+      }
+  })
+</script>
+-->
 <!-- ****** Header ****** -->
 
 <div class="fondorojo">
@@ -44,7 +83,77 @@
   <div class="cuartaseccion">
     <h2>Nuestra <span class="bold">Tienda</span></h2>
     <img id="infancias" src="images\yssAsset 9.svg" type="img/svg" alt="infancias" width="50">
-    
+<!-- Slider de productos -->
+    <div class="carousel">
+      <div class="carousel__container">
+        <div class="carousel__item">
+          <!-- Primer Producto -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="product-images\TOF-SAFARI-BORRADOR.jpg" alt="TOF-SAFARI">
+              <h3>Baul TOF</h3>
+            </div>
+            <div class="add-to-cart-container">
+              <button>COMPRAR</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <!-- Segundo Producto -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="product-images\UPA-BLANCO.jpg" alt="UPA-BLANCO">
+              <h3>Escalera UPA</h3>
+            </div>
+            <div class="add-to-cart-container">
+              <button>COMPRAR</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <!-- Tercer Producto -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="product-images\IMG_4350.jpeg" alt="NUBE-VERDE">
+              <h3>Torre NUBE</h3>
+            </div>
+            <div class="add-to-cart-container">
+              <button>COMPRAR</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <!-- Cuarto Producto -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="product-images\perchero-juy.jpg" alt="PERCHERO-JUY">
+              <h3>Perchero JUY</h3>
+            </div>
+            <div class="add-to-cart-container">
+              <button>COMPRAR</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <!-- Quinto Producto -->
+          <div class="product-card">
+            <div class="product-img-container">
+              <img src="product-images\librero-PAC.jpg" alt="LIBRERO-PAC">
+              <h3>Librero PAC</h3>
+            </div>
+            <div class="add-to-cart-container">
+              <button>COMPRAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__nav">
+        <button id="prevBtn">Anterior</button>
+        <button id="nextBtn">Siguiente</button>
+      </div>
+    </div>
+
+
   </div>
 </div>
 
